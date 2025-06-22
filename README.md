@@ -24,8 +24,8 @@ This project is a console-based application designed to manage vehicle component
 
 ```c
 typedef struct {
-    char nomor[7];     // 6-digit component number + null terminator
-    char nama[26];     // Component name (25 characters + null terminator)
-    int stok;          // Stock count
-    float harga;       // Unit price
-} Komponen;
+    char number[7];      // 6-digit component number
+    char name[26];       // Component name (up to 25 characters + null terminator)
+    int stock;           // Available stock quantity
+    float price;         // Unit price
+} Component;
